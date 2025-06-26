@@ -25,3 +25,17 @@ TestServerHA2 =
       (SERVICE_NAME = TestServer)
     )
   )
+#Edited June 26 250pm
+TestServerHA3 =
+  (DESCRIPTION =
+    (TRANSPORT_CONNECT_TIMEOUT = 10)
+    (FAILOVER = on)
+    (RETRY_COUNT = 10)
+    (RETRY_DELAY = 3)
+    (ADDRESS = (HOST = testserver5.wowcorp.com.au)(PROTOCOL = TCP)(PORT = 1521))
+    (ADDRESS = (HOST = testserver6.wowcorp.com.au)(PROTOCOL = TCP)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = TestServer3)
+    )
+  )
