@@ -1,0 +1,13 @@
+CyberArkTestSN =
+  (DESCRIPTION =
+    (TRANSPORT_CONNECT_TIMEOUT = 10)
+    (FAILOVER = on)
+    (RETRY_COUNT = 10)
+    (RETRY_DELAY = 3)
+    (ADDRESS = (HOST = azloradbd00001.wowcorp.com.au)(PROTOCOL = TCP)(PORT = 1521))
+    (ADDRESS = (HOST = azloradbd00002.wowcorp.com.au)(PROTOCOL = TCP)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ORA_SANDPIT_SRV)
+    )
+  )
